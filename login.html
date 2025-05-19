@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="container">
+    <div class="login-card">
+      <!-- Left Panel: A friendly welcome message -->
+      <section class="left-panel">
+        <h3>Hello, Friend!</h3>
+        <p>Unlock your potential—log in now!</p>
+      </section>
+      <!-- Right Panel: The Login Form -->
+      <section class="right-panel">
+        <h2>Login</h2>
+        <form id="login-form" novalidate>
+          <div class="input-group">
+            <input type="text" placeholder="Username" id="login-username" required>
+            <i class="fa fa-user"></i>
+            <small class="error-message"></small>
+          </div>
+          <div class="input-group password-group">
+            <input type="password" placeholder="Password" id="login-password" required>
+            <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" id="login-btn">Login</button>
+          <p class="forgot-credentials">
+            <a href="#" id="forgot-credentials-link">Forgot Username or Password?</a>
+          </p>
+          <p class="redirect-text">
+            Don't have an account? <a href="register.html">Register</a>
+          </p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
